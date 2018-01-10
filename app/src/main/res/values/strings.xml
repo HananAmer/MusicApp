@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="store">Store</string>
+    <string name="favorites">favorites</string>
+    <string name="search">Search</string>
+    <string name="recent_songs">Most recent songs</string>
+    <string name="track_name">Track name</string>
+    <string name="detail_screen_explanation">This screen is for showing the details of a sound track pressed in the home screen,
+        playing it and save it as a favorite. We can retrieve details and song URL from Last.fm API.
+        We can play and control the song with MediaPlayer class.
+        We can save as a favorite by saving track data in Shared Preferences or in a DataBase.</string>
+    <string name="song_item">Song name - Song Artist - Song Album</string>
+    <string name="home_screen_explanation">This is the home screen for our app.
+        it will show the user the latest songs retrieved from Last.fm API ordered in a vertical manner.
+        the song will have the order: Song_name - Song Artist - Song Album.
+        When the user tap on it, it\'ll open him the Details screen.</string>
+    <string name="search_word">Search...</string>
+    <string name="find_a_track">Find a track</string>
+    <string name="Search_explanation">This screen is for searching Last.fm for some Track,
+        the user gives a word and press Search icon.
+        Then there should appear list of tracks having the word in them.
+        Pressing any song opening details screen just like in home screen.</string>
+    <string name="Favorites_explanation">This screen is for showing the user his/her favorite tracks,
+        the ones he/she marked as a favorite before. Tapping any of them opens the Detail screen for that track.
+        We can retrieve that info from Shared Preferences or DataBase,
+        the choice we use to make it as a favorite in the first place. </string>
+    <string name="download_store">Download store</string>
+    <string name="store_screen_explanation">This screen is for purchasing and downloading a Track.
+        We can use In-app Billing API. First, add the In-app Billing library to the project.
+Update AndroidManifest.xml file.
+Create a ServiceConnection and bind it to the IInAppBillingService.
+Send In-app Billing requests from application to IInAppBillingService.
+Handle In-app Billing responses from Google Play. </string>
+    <string name="cost">$cost</string>
+    <string name="your_favorite_tracks">Your Favorite Tracks</string>
+</resources>

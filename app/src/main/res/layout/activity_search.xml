@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.hanan.musicapp.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6cb8fe"
+        android:padding="8dp">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homesmall"
+            android:id="@+id/home_Btn"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/favorites_Activity_Btn"
+            android:text="@string/favorites"
+            android:textSize="12sp"
+            android:drawableLeft="@android:drawable/btn_star_big_on"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/Store_Activity_Btn"
+            android:text="@string/store"
+            android:drawableLeft="@drawable/storesmall"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title_Search"
+        android:layout_width="match_parent"
+        android:text="@string/find_a_track"
+        android:gravity="center_horizontal"
+        style="@style/title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Header"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/search_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_word"
+        android:layout_marginTop="12dp"
+        android:background="#BBDEFB"
+        android:layout_below="@id/title_Search"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:layout_below="@+id/title_Search"
+        android:layout_toRightOf="@+id/search_EditText"
+        android:layout_toEndOf="@+id/search_EditText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Search_explanation"
+        android:layout_below="@id/search_EditText"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hanan.musicapp.MainActivity"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6cb8fe"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/favorites_Activity_Btn"
+            android:text="@string/favorites"
+            android:textSize="12sp"
+            android:drawableLeft="@android:drawable/btn_star_big_on"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/Store_Activity_Btn"
+            android:text="@string/store"
+            android:drawableLeft="@drawable/storesmall"
+            />
+        <Button
+            android:id="@+id/Search_Activity_Btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+             />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/recent_songs"
+        android:gravity="center"
+        android:padding="8dp"
+        style="@style/title"/>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+        <TextView
+        android:id="@+id/song_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/song_item"
+        android:background="#BBDEFB" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_screen_explanation"/>
+    </LinearLayout>
+</LinearLayout>
